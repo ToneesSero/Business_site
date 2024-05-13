@@ -1,0 +1,45 @@
+:root{
+    --white-card-bg: #fff;
+    --white-card-title: #292f3a;
+    --white-card-description:#4a5d69;
+
+    --black-card-bg: #292f3a;
+    --black-card-title: #fff;
+    --black-card-description:#b4bbc5;
+
+    --blue-card-bg: #1C3483;
+    --blue-card-title: #fff;
+    --blue-card-description:#fff;
+
+    --blue-title: #367fac;
+}
+
+.card{
+    background-color: var(--blue-card-bg);
+    height: 100%;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 10px;    
+}
+.img{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.title{
+    color: var(--blue-card-title);
+    font-weight: 500;
+    font-size: 22px;
+}
+.textAfterTitle{
+    color: var(--blue-card-title);
+    font-weight: 600;
+    font-size: 64px;
+}
+.description{
+    color: var(--blue-card-description);
+    font-weight: 400;
+    font-size: calc(5px + 10*(100vw / 1080));
+}

@@ -1,0 +1,94 @@
+@media (max-width: 690px) {
+    footer{
+        .container{
+            .footer__logo{
+                flex-wrap: wrap;
+            }
+            .footer__desription{
+                gap: 15px;
+                grid-template-columns: repeat(2, 1fr);
+                @media (max-width: 560px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .description__column.footer__connect{
+                    justify-self: start;
+                }
+                .footer__company{
+                    display: none;
+                }                
+            } 
+            .footer__rights{
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #434954;
+    .info__text__p{
+        font-size: 17px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+        padding: 15px 0;
+        
+        .footer__logo{
+            filter: grayscale(1) brightness(1000%);
+            padding-right: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footer__social{
+                img{
+                    cursor: pointer;
+                }
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 15px;
+            }
+        }
+
+        .footer__desription{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .description__column{
+                width: max-content;
+                h4{
+                    width: max-content;
+                }
+                p{width: max-content;}
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-self: center;
+                &:first-child{
+                    justify-self: start;
+                }
+                &:last-child{
+                    justify-self: center;
+                }
+                
+            }
+        }
+        .footer__rights{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .rights__el{
+                display: flex;
+                gap: 15px;
+                a{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
