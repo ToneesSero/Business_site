@@ -8,15 +8,18 @@ import infoImg from './image/hero/info_img.svg'
 import descriptionImg from './image/description/lock.jpg'
 import cardImg from './image/features/img_card.svg'
 
-
+let arr=['asd', 'dsa', 'ppp']
 import Button from './UI/Button/Button';
 import ButtonToUrl from './UI/ButtonToUrl/ButtonToUrl';
 import Card from './UI/Card/Card';
 import Input from './UI/Input/Input';
 import { useFormik } from 'formik';
 import { defaultSchemas } from './schemas/defaultSchemas';
+import {useScrollToElement} from './hooks/useScrollToElement'
+import { useEffect, useRef } from 'react';
 
 function App() {
+  
 
   const onSubmit = (values, actions) => {
     console.log(values);
@@ -35,12 +38,14 @@ function App() {
     onSubmit,
 
   })
+  
+  const mainRef = useRef(null)
 
   return (
-    <div className="App">
-      <Header />
+    <div className="App" ref={mainRef}>
+      <Header mainRef={mainRef} />
 
-      <section className="hero">
+      <section className="hero" >
         <div className="hero_bg_img"></div>
         <div className="hero_bg_color"></div>
         <div className="container container_flex">
@@ -60,7 +65,7 @@ function App() {
         </div>
       </section>
 
-      <section className="about" id="about">
+      <section className="about" id="about" >
         <div className="container">
           <div className="about__title gap_25">
             <h1 className="info__text__h1 info__text__h1_color_black">Facts and Figures</h1>
@@ -171,7 +176,7 @@ function App() {
         </div>
       </section>
 
-      <section class="benefits" id="benefits">
+      <section class="benefits" id="benefits" >
         <div class="hero_bg_img"></div>
         <div class="hero_bg_color"></div>
         <div class="container">
@@ -180,12 +185,6 @@ function App() {
               investing services.</h1>
             <p class="info__text__p info__text__p_color_white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
           </div>
-          <Card
-            img={cardImg}
-            title={'Invoicing'}
-            description={'Make digital exchanges as simple as paper exchange with the same level of security, traceability and probative value'}
-            bgCard={'black'}
-          />
 
           <Card
             img={cardImg}
@@ -222,6 +221,12 @@ function App() {
             bgCard={'black'}
           />
 
+          <Card
+            img={cardImg}
+            title={'Invoicing'}
+            description={'Make digital exchanges as simple as paper exchange with the same level of security, traceability and probative value'}
+            bgCard={'black'}
+          />
 
         </div>
       </section>
@@ -341,7 +346,7 @@ function App() {
         </div>
       </section>
 
-      <Footer />
+      <Footer mainRef={mainRef} />
     </div>
   );
 }

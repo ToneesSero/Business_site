@@ -7,7 +7,13 @@ import youtubeImage from '../image/footer/youtube.svg'
 import instagramImage from '../image/footer/instagram.svg'
 import twitterImage from '../image/footer/twitter.svg'
 
-export default function Footer() {
+import { useScrollToElement } from '../hooks/useScrollToElement'
+
+export default function Footer({mainRef}) {
+
+    const scrollTo = useScrollToElement(mainRef)
+    
+
   return (
     <div className=''>
         <footer>
@@ -35,9 +41,9 @@ export default function Footer() {
                     </div>
                     <div className="description__column footer__company">
                         <h4 className="info__text__h4 info__text__h4_color_white ">Company</h4>
-                        <p className="info__text__p info__text__p_color_white"> <a href="#about">About us</a></p>
-                        <p className="info__text__p info__text__p_color_white"> <a href="#features">Mission</a></p>
-                        <p className="info__text__p info__text__p_color_white"><a href="#benefits">Benefits</a>  </p>
+                        <p className="info__text__p info__text__p_color_white"> <a onClick={()=>scrollTo('about')}>About us</a></p>
+                        <p className="info__text__p info__text__p_color_white"> <a onClick={()=>scrollTo('features')}>Mission</a></p>
+                        <p className="info__text__p info__text__p_color_white"><a onClick={()=>scrollTo('benefits')} >Benefits</a>  </p>
                         <p className="info__text__p info__text__p_color_white"><a href="https://www.google.com/" target="_blank" rel="noreferrer noopener">Services</a>  </p>
                     </div>
                     <div className="description__column footer__connect">
