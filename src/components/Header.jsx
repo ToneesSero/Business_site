@@ -18,32 +18,32 @@ export default function Header ({mainRef})  {
   return (
     <div className='header'>
 
-        <div class="container container_flex">
-            <div class="logo">
-                <a href="/"> <img class="logo__img" src={logo} alt="logo"/></a>
+        <div className="container container_flex">
+            <div className="logo">
+                <a href="/"> <img className="logo__img" src={logo} alt="logo"/></a>
              </div>
-             <div class="menu__icon" ref={burgerRef} onClick={toggleMenuBurger}>
+             <div className="menu__icon" ref={burgerRef} onClick={toggleMenuBurger}>
                 <span></span>
                 <span></span>
                 <span></span>
              </div>
-             <nav class="menu menu_horisontal " ref={menuRef}>
-                <div class="menu__item" onClick={offMenuBurger}>
-                    <h4 class="menu__item__text menu__item__text_color_grey"><a onClick={()=>{scrollTo('about')}}>About Us</a></h4>
+             <nav className="menu menu_horisontal " ref={menuRef}>
+                <div className="menu__item" onClick={offMenuBurger}>
+                    <h4 className="menu__item__text menu__item__text_color_grey" onClick={()=>{scrollTo('about')}}>About Us</h4>
                 </div>
-                <div class="menu__item" onClick={offMenuBurger} >
-                    <h4 class="menu__item__text menu__item__text_color_grey"> <a onClick={()=>{scrollTo('features')}} >Mission</a></h4>
+                <div className="menu__item" onClick={offMenuBurger} >
+                    <h4 className="menu__item__text menu__item__text_color_grey" onClick={()=>{scrollTo('features')}}>  Mission</h4>
                 </div>
-                <div class="menu__item" onClick={offMenuBurger} >
-                    <h4 class="menu__item__text menu__item__text_color_grey"><a onClick={()=>{scrollTo('benefits')}} >Benefits</a>  </h4>
+                <div className="menu__item" onClick={offMenuBurger} >
+                    <h4 className="menu__item__text menu__item__text_color_grey" onClick={()=>{scrollTo('benefits')}}> Benefits  </h4>
                 </div>
-                <div class="menu__item" onClick={offMenuBurger} >
-                    <h4 class="menu__item__text menu__item__text_color_grey"><a onClick={()=>{scrollTo('video')}} >Testimonials</a>  </h4>
+                <div className="menu__item" onClick={offMenuBurger} >
+                    <h4 className="menu__item__text menu__item__text_color_grey" onClick={()=>{scrollTo('video')}}> Testimonials  </h4>
                 </div>
-                <div class="menu__item" onClick={offMenuBurger} >
-                    <h4 class="menu__item__text menu__item__text_color_grey"> <a onClick={()=>{scrollTo('contactUs')}} >Contact us</a></h4>
+                <div className="menu__item" onClick={offMenuBurger} >
+                    <h4 className="menu__item__text menu__item__text_color_grey" onClick={()=>{scrollTo('contactUs')}}>  Contact us</h4>
                 </div>
-                <div class="menu__item" onClick={offMenuBurger} >
+                <div className="menu__item" onClick={offMenuBurger} >
                     <ButtonToUrl bgColor={'black'} url={"https://www.google.com/"}> Book a demo </ButtonToUrl>
                 </div>
              </nav>

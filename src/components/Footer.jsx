@@ -41,9 +41,9 @@ export default function Footer({mainRef}) {
                     </div>
                     <div className="description__column footer__company">
                         <h4 className="info__text__h4 info__text__h4_color_white ">Company</h4>
-                        <p className="info__text__p info__text__p_color_white"> <a onClick={()=>scrollTo('about')}>About us</a></p>
-                        <p className="info__text__p info__text__p_color_white"> <a onClick={()=>scrollTo('features')}>Mission</a></p>
-                        <p className="info__text__p info__text__p_color_white"><a onClick={()=>scrollTo('benefits')} >Benefits</a>  </p>
+                        <p className="info__text__p info__text__p_color_white">  onClick={()=>scrollTo('about')}About us</p>
+                        <p className="info__text__p info__text__p_color_white">  onClick={()=>scrollTo('features')}Mission</p>
+                        <p className="info__text__p info__text__p_color_white"> onClick={()=>scrollTo('benefits')} Benefits  </p>
                         <p className="info__text__p info__text__p_color_white"><a href="https://www.google.com/" target="_blank" rel="noreferrer noopener">Services</a>  </p>
                     </div>
                     <div className="description__column footer__connect">
