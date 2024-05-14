@@ -8,15 +8,13 @@ import infoImg from './image/hero/info_img.svg'
 import descriptionImg from './image/description/lock.jpg'
 import cardImg from './image/features/img_card.svg'
 
-let arr=['asd', 'dsa', 'ppp']
 import Button from './UI/Button/Button';
 import ButtonToUrl from './UI/ButtonToUrl/ButtonToUrl';
 import Card from './UI/Card/Card';
 import Input from './UI/Input/Input';
 import { useFormik } from 'formik';
 import { defaultSchemas } from './schemas/defaultSchemas';
-import {useScrollToElement} from './hooks/useScrollToElement'
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 function App() {
   
@@ -273,17 +271,17 @@ function App() {
                   <div class="contactUs__form__desc__img email__img"></div>
                   <div class="contactUs__form__desc__text email__text">
                     <p class="info__text__p info__text__p_color_dark-grey">For products information:</p>
-                    <p class="info__text__p info__text__p_color_white">contact@Investseed.com</p>
+                    <p class="info__text__p info__text__p_color_white"> <a href="mailto:contact@Investseed.com">contact@Investseed.com</a> </p>
                     <p class="info__text__p info__text__p_color_dark-grey">For products information:</p>
-                    <p class="info__text__p info__text__p_color_white">commercial@Investseed.com</p>
+                    <p class="info__text__p info__text__p_color_white"><a href="mailto:commercial@Investseed.com">commercial@Investseed.com</a></p>
                   </div>
                 </div>
                 <div class="contactUs__form__desc__item">
                   <div class="contactUs__form__desc__img phone__img"></div>
                   <div class="contactUs__form__desc__text phone__text">
                     <p class="info__text__p info__text__p_color_dark-grey">Phone number</p>
-                    <p class="info__text__p info__text__p_color_white">+33 (0)000 000 00</p>
-                    <p class="info__text__p info__text__p_color_white">+33 (0)000 000 00</p>
+                    <p class="info__text__p info__text__p_color_white"><a href="tel:+330911000000">+33 (0)9 11 00 00 00</a></p>
+                    <p class="info__text__p info__text__p_color_white"><a href="tel:+330911000000">+33 (0)9 11 00 00 00</a></p>
                   </div>
                 </div>
                 <div class="contactUs__form__desc__item">

@@ -844,6 +844,9 @@ label{
         grid-template-columns: calc(20px + 40*(100vw / 1800)) 1fr;
         gap: 20px;
         .contactUs__form__desc__text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             height: max-content;
         }
     }

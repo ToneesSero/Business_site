@@ -48,8 +48,8 @@ export default function Footer({mainRef}) {
                     </div>
                     <div className="description__column footer__connect">
                         <h4 className="info__text__h4 info__text__h4_color_white">Connect</h4>
-                        <p className="info__text__p info__text__p_color_white">demo@investseed.com</p>
-                        <p className="info__text__p info__text__p_color_white">+33 (0)9 11 00 00 00</p>
+                        <p className="info__text__p info__text__p_color_white" ><a href="mailto:demo@investseed.com">demo@investseed.com</a>  </p>
+                        <p className="info__text__p info__text__p_color_white"><a href="tel:+330911000000">+33 (0)9 11 00 00 00</a></p>
                     </div>
                 </div>
                 <div className="footer__rights">

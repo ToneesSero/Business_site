@@ -11,7 +11,6 @@ function useScrollToElement (ref, displacement) {
         const currentBlock = Array.from(ref.current.childNodes).filter(el=>el.id === scrollToId)
 
         console.log('currentBlock', currentBlock);
-        // if child nodes === id => continue
         // useMemo & useCallback        
         if (currentBlock && currentBlock.length>0) {
             if (displacement > 0) {
